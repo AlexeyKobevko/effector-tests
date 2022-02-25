@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": true,
+    "declaration": false,
+    "declarationMap": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "react-jsxdev",
+    "lib": ["dom", "esnext"],
+    "strict": true,
+    "outDir": "dist",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "target": "es2020",
+    "baseUrl": "./src",
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "types": ["vite-plugin-svgr/client", "jest", "node"]
+  },
+  "exclude": [
+    "node_modules",
+    "./vite.config.ts",
+    "./tailwind.config.js",
+    "./postcss.config.js",
+    "./jest.config.ts",
+    "./jest.setup.ts"
+  ],
+  "include": ["src/**/*", "*"]
+}

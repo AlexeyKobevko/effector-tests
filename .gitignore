@@ -1,0 +1,21 @@
+# dependencies
+node_modules
+stats.html
+
+#react
+dist
+global.css
+
+#env
+*.local
+
+# misc
+.DS_Store
+.idea
+.vscode
+
+# debug
+yarn-debug.log*
+yarn-error.log*
+
+coverage

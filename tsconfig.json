@@ -22,7 +22,7 @@
     "target": "es2020",
     "baseUrl": "./src",
     "typeRoots": ["./types", "./node_modules/@types"],
-    "types": ["vite-plugin-svgr/client", "jest", "node"]
+    "types": ["vite-plugin-svgr/client", "jest", "node", "effector/babel-plugin"]
   },
   "exclude": [
     "node_modules",

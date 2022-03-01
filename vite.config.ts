@@ -5,21 +5,15 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import svgrPlugin from 'vite-plugin-svgr';
 import { visualizer } from 'rollup-plugin-visualizer';
 import legacy from '@vitejs/plugin-legacy';
+import babel from 'vite-babel-plugin';
 
 const isProd = process.env.NODE_ENV === 'production';
 const assetsDir = 'landings/assets';
 
 export default defineConfig({
   plugins: [
-    react({
-      babel: {
-        plugins: ['effector/babel-plugin'],
-        // Use .babelrc files
-        babelrc: false,
-        // Use babel.config.js files
-        configFile: false,
-      },
-    }),
+    react(),
+    babel(),
     tsconfigPaths(),
     svgrPlugin(),
     legacy({
